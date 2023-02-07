@@ -852,47 +852,8 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "componentName": "Button",
-                    "id": "node_ocldtv2bsb1",
-                    "props": {
-                        "type": "primary",
-                        "children": "主按钮",
-                        "htmlType": "button",
-                        "size": "middle",
-                        "shape": "default",
-                        "icon": {
-                            "type": "JSSlot",
-                            "value": [
-                                {
-                                    "componentName": "Icon",
-                                    "id": "node_ocldtv2bsb3",
-                                    "props": {
-                                        "type": "SmileOutlined",
-                                        "size": 20,
-                                        "rotate": 0,
-                                        "spin": false
-                                    },
-                                    "hidden": false,
-                                    "title": "",
-                                    "isLocked": false,
-                                    "condition": true,
-                                    "conditionGroup": ""
-                                }
-                            ]
-                        },
-                        "block": false,
-                        "danger": false,
-                        "ghost": false,
-                        "disabled": false
-                    },
-                    "hidden": false,
-                    "title": "",
-                    "isLocked": false,
-                    "condition": true,
-                    "conditionGroup": ""
                 }
+                
             ]
         }
     ],

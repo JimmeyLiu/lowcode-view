@@ -30,16 +30,7 @@
       ],
       "library": "antd"
     },
-    {
-      "title": "fusion组件库",
-      "package": "@alifd/next",
-      "version": "1.26.4",
-      "urls": [
-        "https://g.alicdn.com/code/lib/alifd__next/1.26.4/next.min.css",
-        "https://g.alicdn.com/code/lib/alifd__next/1.26.4/next-with-locales.min.js"
-      ],
-      "library": "Next"
-    },
+    
     {
       "package": "@alilc/antd-lowcode-materials",
       "version": "1.1.1",

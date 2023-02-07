@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
 // import Index from "./pages/Index";
-import PageRender from './PageRender'
-import home from './config/pages/home.json';
-import index from './config/pages/index.json';
+import PageRender from './lce/PageRender'
+import home from './lce/pages/home.json';
+import index from './lce/pages/index.json';
 const routes = [
     {
         path: "/index",
@@ -16,7 +16,7 @@ const routes = [
         path: "/",
         element: <Navigate to="/home" />
     }
-    
+
 ]
 
 

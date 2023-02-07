@@ -1,11 +1,10 @@
-import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
-import { Loading } from '@alifd/next';
+import { Spin } from 'antd';
 import { buildComponents, assetBundle, AssetLevel, AssetLoader } from '@alilc/lowcode-utils';
 import ReactRenderer from '@alilc/lowcode-react-renderer';
 import { injectComponents } from '@alilc/lowcode-plugin-inject';
 import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler'
-import assets from './config/assets.json'
+import assets from './assets.json'
 
 const PageRender = (props) => {
     const [data, setData] = useState({});
@@ -47,7 +46,7 @@ const PageRender = (props) => {
     const { schema, components } = data;
     if (!schema || !components) {
         init();
-        return <Loading fullScreen />;
+        return <Spin size='large' />;
     }
 
     return (
