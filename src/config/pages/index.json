@@ -1,0 +1,149 @@
+{
+    "version": "1.0.0",
+    "componentsMap": [
+        {
+            "devMode": "lowCode",
+            "componentName": "Page"
+        },
+        {
+            "package": "@alilc/antd-lowcode-materials",
+            "version": "1.1.1",
+            "exportName": "Table",
+            "main": "",
+            "destructuring": true,
+            "componentName": "Table"
+        }
+    ],
+    "componentsTree": [
+        {
+            "componentName": "Page",
+            "id": "node_dockcviv8fo1",
+            "props": {
+                "ref": "outerView",
+                "style": {
+                    "height": "100%"
+                }
+            },
+            "fileName": "/",
+            "dataSource": {
+                "list": [
+                    {
+                        "type": "fetch",
+                        "isInit": true,
+                        "options": {
+                            "params": {},
+                            "method": "GET",
+                            "isCors": true,
+                            "timeout": 5000,
+                            "headers": {},
+                            "uri": "mock/info.json"
+                        },
+                        "id": "info",
+                        "shouldFetch": {
+                            "type": "JSFunction",
+                            "value": "function() { \n  console.log('should fetch.....');\n  return true; \n}"
+                        }
+                    }
+                ]
+            },
+            "state": {
+                "text": {
+                    "type": "JSExpression",
+                    "value": "\"outer\""
+                },
+                "isShowDialog": {
+                    "type": "JSExpression",
+                    "value": "false"
+                }
+            },
+            "css": "body {\n  font-size: 12px;\n}\n\n.button {\n  width: 100px;\n  color: #ff00ff\n}",
+            "lifeCycles": {
+                "componentDidMount": {
+                    "type": "JSFunction",
+                    "value": "function componentDidMount() {\n  console.log('did mount');\n}"
+                },
+                "componentWillUnmount": {
+                    "type": "JSFunction",
+                    "value": "function componentWillUnmount() {\n  console.log('will unmount');\n}"
+                }
+            },
+            "methods": {
+                "testFunc": {
+                    "type": "JSFunction",
+                    "value": "function testFunc() {\n  console.log('test func');\n}"
+                },
+                "onClick": {
+                    "type": "JSFunction",
+                    "value": "function onClick() {\n  this.setState({\n    isShowDialog: true\n  });\n}"
+                },
+                "closeDialog": {
+                    "type": "JSFunction",
+                    "value": "function closeDialog() {\n  this.setState({\n    isShowDialog: false\n  });\n}"
+                }
+            },
+            "originCode": "class LowcodeComponent extends Component {\n  state = {\n    \"text\": \"outer\",\n    \"isShowDialog\": false\n  }\n  componentDidMount() {\n    console.log('did mount');\n  }\n  componentWillUnmount() {\n    console.log('will unmount');\n  }\n  testFunc() {\n    console.log('test func');\n  }\n  onClick() {\n    this.setState({\n      isShowDialog: true\n    })\n  }\n  closeDialog() {\n    this.setState({\n      isShowDialog: false\n    })\n  }\n}",
+            "hidden": false,
+            "title": "",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [
+                {
+                    "componentName": "Table",
+                    "id": "node_ocldtzi26jq",
+                    "props": {
+                        "dataSource": [
+                            {
+                                "id": "1",
+                                "name": "胡彦斌",
+                                "age": 32,
+                                "address": "西湖区湖底公园1号"
+                            },
+                            {
+                                "id": "2",
+                                "name": "王一博",
+                                "age": 28,
+                                "address": "滨江区网商路699号"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "title": "姓名",
+                                "dataIndex": "name",
+                                "key": "name"
+                            },
+                            {
+                                "title": "年龄",
+                                "dataIndex": "age",
+                                "key": "age"
+                            }
+                        ],
+                        "rowKey": "id",
+                        "pagination": {
+                            "pageSize": 10,
+                            "total": 15,
+                            "current": 1,
+                            "showSizeChanger": false,
+                            "showQuickJumper": false,
+                            "simple": false,
+                            "size": "default"
+                        },
+                        "loading": false,
+                        "showHeader": true,
+                        "size": "default",
+                        "tableLayout": "",
+                        "scroll": {
+                            "scrollToFirstRowOnChange": true
+                        }
+                    },
+                    "hidden": false,
+                    "title": "",
+                    "isLocked": false,
+                    "condition": true,
+                    "conditionGroup": ""
+                }
+            ]
+        }
+    ],
+    "i18n": {}
+}

@@ -1,0 +1,900 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Icon",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Icon"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Button",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Button"
+    },
+    {
+      "devMode": "lowCode",
+      "componentName": "Page"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Input",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Input"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Form",
+      "main": "",
+      "destructuring": true,
+      "subName": "Item",
+      "componentName": "Form.Item"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "InputNumber",
+      "main": "",
+      "destructuring": true,
+      "componentName": "InputNumber"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Input",
+      "main": "",
+      "destructuring": true,
+      "subName": "Password",
+      "componentName": "Input.Password"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Input",
+      "main": "",
+      "destructuring": true,
+      "subName": "TextArea",
+      "componentName": "Input.TextArea"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Select",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Select"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Slider",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Slider"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Checkbox",
+      "main": "",
+      "destructuring": true,
+      "subName": "Group",
+      "componentName": "Checkbox.Group"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Switch",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Switch"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "TimePicker",
+      "main": "",
+      "destructuring": true,
+      "componentName": "TimePicker"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Rate",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Rate"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.1.1",
+      "exportName": "Form",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Form"
+    }
+  ],
+  "componentsTree": [
+    {
+      "componentName": "Page",
+      "id": "node_dockcviv8fo1",
+      "props": {
+        "ref": "outerView",
+        "style": {
+          "height": "100%"
+        }
+      },
+      "fileName": "/",
+      "dataSource": {
+        "list": [
+          {
+            "type": "fetch",
+            "isInit": true,
+            "options": {
+              "params": {},
+              "method": "GET",
+              "isCors": true,
+              "timeout": 5000,
+              "headers": {},
+              "uri": "mock/info.json"
+            },
+            "id": "info",
+            "shouldFetch": {
+              "type": "JSFunction",
+              "value": "function() { \n  console.log('should fetch.....');\n  return true; \n}"
+            }
+          }
+        ]
+      },
+      "state": {
+        "text": {
+          "type": "JSExpression",
+          "value": "\"outer\""
+        },
+        "isShowDialog": {
+          "type": "JSExpression",
+          "value": "false"
+        }
+      },
+      "css": "body {\n  font-size: 12px;\n}\n\n.button {\n  width: 100px;\n  color: #ff00ff\n}",
+      "lifeCycles": {
+        "componentDidMount": {
+          "type": "JSFunction",
+          "value": "function componentDidMount() {\n  console.log('did mount');\n}"
+        },
+        "componentWillUnmount": {
+          "type": "JSFunction",
+          "value": "function componentWillUnmount() {\n  console.log('will unmount');\n}"
+        }
+      },
+      "methods": {
+        "testFunc": {
+          "type": "JSFunction",
+          "value": "function testFunc() {\n  console.log('test func');\n}"
+        },
+        "onClick": {
+          "type": "JSFunction",
+          "value": "function onClick() {\n  this.setState({\n    isShowDialog: true\n  });\n}"
+        },
+        "closeDialog": {
+          "type": "JSFunction",
+          "value": "function closeDialog() {\n  this.setState({\n    isShowDialog: false\n  });\n}"
+        }
+      },
+      "originCode": "class LowcodeComponent extends Component {\n  state = {\n    \"text\": \"outer\",\n    \"isShowDialog\": false\n  }\n  componentDidMount() {\n    console.log('did mount');\n  }\n  componentWillUnmount() {\n    console.log('will unmount');\n  }\n  testFunc() {\n    console.log('test func');\n  }\n  onClick() {\n    this.setState({\n      isShowDialog: true\n    })\n  }\n  closeDialog() {\n    this.setState({\n      isShowDialog: false\n    })\n  }\n}",
+      "hidden": false,
+      "title": "",
+      "isLocked": false,
+      "condition": true,
+      "conditionGroup": "",
+      "children": [
+        {
+          "componentName": "Form",
+          "id": "node_ocldtzi26j2",
+          "props": {
+            "labelCol": {
+              "span": 6
+            },
+            "wrapperCol": {
+              "span": 14
+            },
+            "onValuesChange": {
+              "type": "JSExpression",
+              "value": "function() {\n      const self = this;\n      try {\n        return (function onValuesChange(changedValues, allValues) {\n  console.log('onValuesChange', changedValues, allValues);\n}).apply(self, arguments);\n      } catch(e) {\n        logger.warn('call function which parsed by lowcode failed: ', e);\n        return e.message;\n      }\n    }"
+            },
+            "onFinish": {
+              "type": "JSExpression",
+              "value": "function() {\n      const self = this;\n      try {\n        return (function onFinish(values) {\n  console.log('onFinish', values);\n}).apply(self, arguments);\n      } catch(e) {\n        logger.warn('call function which parsed by lowcode failed: ', e);\n        return e.message;\n      }\n    }"
+            },
+            "onFinishFailed": {
+              "type": "JSExpression",
+              "value": "function() {\n      const self = this;\n      try {\n        return (function onFinishFailed({ values, errorFields, outOfDate }) {\n  console.log('onFinishFailed', values, errorFields, outOfDate);\n}).apply(self, arguments);\n      } catch(e) {\n        logger.warn('call function which parsed by lowcode failed: ', e);\n        return e.message;\n      }\n    }"
+            },
+            "name": "basic",
+            "ref": "form_g5ru",
+            "colon": true,
+            "hideRequiredMark": false,
+            "preserve": true,
+            "scrollToFirstError": true,
+            "validateMessages": {
+              "required": "'${name}' 不能为空"
+            }
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26j3",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": true,
+                "noStyle": false,
+                "valuePropName": "value",
+                "name": "a",
+                "requiredobj": {
+                  "required": true,
+                  "message": "必填"
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Input",
+                  "id": "node_ocldtzi26j4",
+                  "props": {
+                    "placeholder": "请输入",
+                    "bordered": true,
+                    "disabled": false,
+                    "size": "middle"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26j5",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "b"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "InputNumber",
+                  "id": "node_ocldtzi26j6",
+                  "props": {
+                    "placeholder": "请输入",
+                    "autoFocus": false,
+                    "disabled": false,
+                    "controls": true,
+                    "bordered": true,
+                    "size": "middle"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26j7",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "c"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Input.Password",
+                  "id": "node_ocldtzi26j8",
+                  "props": {
+                    "bordered": true,
+                    "disabled": false,
+                    "visibilityToggle": true,
+                    "placeholder": "请输入",
+                    "size": "middle"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26j9",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "d"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Input.TextArea",
+                  "id": "node_ocldtzi26ja",
+                  "props": {
+                    "autoSize": {
+                      "minRows": 3,
+                      "maxRows": 3
+                    },
+                    "placeholder": "请输入",
+                    "bordered": true,
+                    "disabled": false,
+                    "showCount": false,
+                    "size": "middle"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jb",
+              "props": {
+                "label": "表单项",
+                "name": "e",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Select",
+                  "id": "node_ocldtzi26jc",
+                  "props": {
+                    "style": {
+                      "width": 200
+                    },
+                    "options": [
+                      {
+                        "label": "A",
+                        "value": "A"
+                      },
+                      {
+                        "label": "B",
+                        "value": "B"
+                      },
+                      {
+                        "label": "C",
+                        "value": "C"
+                      }
+                    ],
+                    "allowClear": false,
+                    "autoFocus": false,
+                    "defaultActiveFirstOption": true,
+                    "disabled": false,
+                    "labelInValue": false,
+                    "showSearch": false,
+                    "size": "middle",
+                    "loading": false,
+                    "bordered": true,
+                    "filterOption": true,
+                    "optionFilterProp": "value",
+                    "tokenSeparators": []
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jd",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "f"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Slider",
+                  "id": "node_ocldtzi26je",
+                  "props": {
+                    "defaultValue": 30,
+                    "range": false,
+                    "disabled": false,
+                    "dots": false,
+                    "reverse": false,
+                    "vertical": false
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jf",
+              "props": {
+                "label": "表单项",
+                "name": "g",
+                "initialValue": "A",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Checkbox.Group",
+                  "id": "node_ocldtzi26jg",
+                  "props": {
+                    "options": [
+                      {
+                        "label": "A",
+                        "value": "A"
+                      },
+                      {
+                        "label": "B",
+                        "value": "B"
+                      },
+                      {
+                        "label": "C",
+                        "value": "C"
+                      }
+                    ]
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jh",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "checked",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "i"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Switch",
+                  "id": "node_ocldtzi26ji",
+                  "props": {
+                    "defaultChecked": false,
+                    "autoFocus": false,
+                    "disabled": false,
+                    "loading": false,
+                    "size": "default"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jj",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "j"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "TimePicker",
+                  "id": "node_ocldtzi26jk",
+                  "props": {
+                    "allowClear": true,
+                    "autoFocus": false,
+                    "bordered": true,
+                    "disabled": false,
+                    "hideDisabledOptions": false,
+                    "inputReadOnly": false,
+                    "use12Hours": false
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jl",
+              "props": {
+                "label": "表单项",
+                "labelAlign": "right",
+                "colon": true,
+                "required": false,
+                "noStyle": false,
+                "valuePropName": "value",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                },
+                "name": "k"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Rate",
+                  "id": "node_ocldtzi26jm",
+                  "props": {
+                    "defaultValue": 3,
+                    "allowClear": true,
+                    "allowHalf": false,
+                    "autoFocus": false,
+                    "count": 5,
+                    "disabled": false,
+                    "tooltips": []
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocldtzi26jn",
+              "props": {
+                "wrapperCol": {
+                  "offset": 6
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Button",
+                  "id": "node_ocldtzi26jo",
+                  "props": {
+                    "type": "primary",
+                    "children": "提交",
+                    "htmlType": "submit"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "Button",
+                  "id": "node_ocldtzi26jp",
+                  "props": {
+                    "style": {
+                      "marginLeft": 20
+                    },
+                    "children": "取消"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Button",
+          "id": "node_ocldtv2bsb1",
+          "props": {
+            "type": "primary",
+            "children": "主按钮",
+            "htmlType": "button",
+            "size": "middle",
+            "shape": "default",
+            "icon": {
+              "type": "JSSlot",
+              "value": [
+                {
+                  "componentName": "Icon",
+                  "id": "node_ocldtv2bsb3",
+                  "props": {
+                    "type": "SmileOutlined",
+                    "size": 20,
+                    "rotate": 0,
+                    "spin": false
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            "block": false,
+            "danger": false,
+            "ghost": false,
+            "disabled": false
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        }
+      ]
+    }
+  ],
+  "i18n": {}
+}
